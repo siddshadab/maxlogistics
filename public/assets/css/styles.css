@@ -70,6 +70,7 @@ body {
   transition: .5s;
 }
 
+
 h1, h2, h3 {
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
@@ -485,11 +486,16 @@ body.dark-theme {
 /* For medium devices */
 @media screen and (min-width: 576px) {
   .svg__img {
-    width: 100%;
+    max-width: 100%;
   }
+  .home__data{
+    max-width: 100%;
+  }
+
   .section__title-center {
     text-align: initial;
   }
+
   .home__container,
   .about__container,
   .security__container,
@@ -597,4 +603,14 @@ body.dark-theme {
   .scrollup {
     right: 2rem;
   }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 576px){
+.button-start{
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
 }
