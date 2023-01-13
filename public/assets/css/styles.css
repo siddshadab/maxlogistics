@@ -466,6 +466,21 @@ body.dark-theme {
   background-color: var(--text-color-light);
 }
 
+.static_map{
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .static_map  iframe{
+  max-width: 90%;
+  display: flex;
+  padding-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+ }
+
 /*=============== MEDIA QUERIES ===============*/
 /* For small devices */
 @media screen and (max-width: 360px) {
@@ -605,12 +620,20 @@ body.dark-theme {
   }
 }
 
-@media only screen and (min-width: 280px) and (max-width: 576px){
+@media only screen and (min-width: 280px) and (max-width: 650px){
 .button-start{
   max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
  }
+ .static_map  iframe{
+  max-width: 90%;
+  height: 300px;
+ 
+  padding-bottom: 20px;
+  
+ }
 
 }
+
